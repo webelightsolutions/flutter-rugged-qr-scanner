@@ -32,9 +32,9 @@
 /// await scannerService.enable();
 /// ```
 ///
-/// See the [README](https://github.com/yourusername/rugged_qr_scanner) for
+/// See the [README](https://github.com/webelightsolutions/flutter-rugged-qr-scanner) for
 /// detailed documentation and examples.
-library rugged_qr_scanner;
+library rugged_qr_scan;
 
 export 'src/models/scan_result.dart';
 export 'src/services/rugged_scanner_service.dart';

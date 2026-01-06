@@ -51,7 +51,7 @@ class _ScannerExamplePageState extends State<ScannerExamplePage> {
           _scanHistory.removeLast();
         }
       });
-      
+
       ScaffoldMessenger.of(context).showSnackBar(
         SnackBar(
           content: Row(
@@ -141,17 +141,13 @@ class _ScannerExamplePageState extends State<ScannerExamplePage> {
                 Container(
                   padding: const EdgeInsets.all(20),
                   decoration: BoxDecoration(
-                    color: isAvailable 
-                        ? Colors.deepPurple.shade50 
-                        : Colors.grey.shade100,
+                    color: isAvailable ? Colors.deepPurple.shade50 : Colors.grey.shade100,
                     borderRadius: BorderRadius.circular(20),
                   ),
                   child: Icon(
                     Icons.qr_code_scanner,
                     size: 48,
-                    color: isAvailable 
-                        ? Colors.deepPurple 
-                        : Colors.grey.shade400,
+                    color: isAvailable ? Colors.deepPurple : Colors.grey.shade400,
                   ),
                 ),
                 const SizedBox(height: 20),
@@ -159,9 +155,7 @@ class _ScannerExamplePageState extends State<ScannerExamplePage> {
                 // Status Indicators
                 _StatusIndicator(
                   icon: isAvailable ? Icons.check_circle : Icons.error,
-                  label: isAvailable
-                      ? 'Hardware Scanner Ready'
-                      : 'Hardware Not Available',
+                  label: isAvailable ? 'Hardware Scanner Ready' : 'Hardware Not Available',
                   color: isAvailable ? Colors.green : Colors.red,
                 ),
                 const SizedBox(height: 12),
@@ -179,9 +173,7 @@ class _ScannerExamplePageState extends State<ScannerExamplePage> {
                   child: ElevatedButton(
                     onPressed: isAvailable ? _toggleScanner : null,
                     style: ElevatedButton.styleFrom(
-                      backgroundColor: isEnabled 
-                          ? Colors.red.shade400 
-                          : Colors.deepPurple,
+                      backgroundColor: isEnabled ? Colors.red.shade400 : Colors.deepPurple,
                       foregroundColor: Colors.white,
                       disabledBackgroundColor: Colors.grey.shade300,
                       elevation: 0,
@@ -263,17 +255,13 @@ class _ScannerExamplePageState extends State<ScannerExamplePage> {
                       mainAxisAlignment: MainAxisAlignment.center,
                       children: [
                         Icon(
-                          isAvailable 
-                              ? Icons.qr_code_2 
-                              : Icons.scanner_outlined,
+                          isAvailable ? Icons.qr_code_2 : Icons.scanner_outlined,
                           size: 80,
                           color: Colors.grey.shade300,
                         ),
                         const SizedBox(height: 16),
                         Text(
-                          isAvailable
-                              ? 'No scans yet'
-                              : 'Scanner not available',
+                          isAvailable ? 'No scans yet' : 'Scanner not available',
                           style: TextStyle(
                             fontSize: 18,
                             fontWeight: FontWeight.w500,
@@ -282,9 +270,7 @@ class _ScannerExamplePageState extends State<ScannerExamplePage> {
                         ),
                         const SizedBox(height: 8),
                         Text(
-                          isAvailable
-                              ? 'Press the trigger to start scanning'
-                              : 'Hardware scanner not found',
+                          isAvailable ? 'Press the trigger to start scanning' : 'Hardware scanner not found',
                           style: TextStyle(
                             fontSize: 14,
                             color: Colors.grey.shade500,
@@ -396,7 +382,7 @@ class _ScanResultCard extends StatelessWidget {
               ),
             ),
             const SizedBox(width: 16),
-            
+
             // Content
             Expanded(
               child: Column(
