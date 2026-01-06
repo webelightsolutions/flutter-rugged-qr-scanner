@@ -1,0 +1,60 @@
+# Analysis options for rugged_qr_scanner package
+# This file configures the Dart analyzer and linter
+
+include: package:flutter_lints/flutter.yaml
+
+linter:
+  rules:
+    # Error rules
+    - avoid_empty_else
+    - avoid_print
+    - avoid_relative_lib_imports
+    - avoid_types_as_parameter_names
+    - no_duplicate_case_values
+    - prefer_const_constructors
+    - prefer_const_declarations
+    - prefer_final_fields
+    - prefer_final_locals
+    - prefer_single_quotes
+    
+    # Style rules
+    - always_declare_return_types
+    - always_put_required_named_parameters_first
+    - prefer_relative_imports
+    - avoid_unnecessary_containers
+    - camel_case_types
+    - constant_identifier_names
+    - file_names
+    - library_names
+    - library_prefixes
+    - non_constant_identifier_names
+    - prefer_adjacent_string_concatenation
+    - prefer_collection_literals
+    - prefer_conditional_assignment
+    - prefer_const_constructors_in_immutables
+    - prefer_contains
+    - prefer_final_in_for_each
+    - prefer_if_null_operators
+    - prefer_is_empty
+    - prefer_is_not_empty
+    - prefer_null_aware_operators
+    - prefer_spread_collections
+    - sort_child_properties_last
+    - use_key_in_widget_constructors
+    
+    # Documentation rules
+    - public_member_api_docs
+    - require_trailing_commas
+
+analyzer:
+  exclude:
+    - "**/*.g.dart"
+    - "**/*.freezed.dart"
+  errors:
+    invalid_annotation_target: ignore
+    todo: ignore
+  language:
+    strict-casts: true
+    strict-inference: true
+    strict-raw-types: true
+

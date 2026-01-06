@@ -1,0 +1,55 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- Permissions for industrial device integration -->
+    <uses-permission android:name="com.symbol.datawedge.api.ACTION" />
+    <uses-permission android:name="com.honeywell.decode.intent.action.ACTION_DECODE" />
+
+    <application>
+        <!-- Broadcast receiver for scanner intents - registered in manifest to catch package-targeted broadcasts -->
+        <receiver android:name="com.rugged.qr_scanner.ScannerBroadcastReceiver" android:exported="true" android:enabled="true" android:permission="android.permission.RECEIVE_BOOT_COMPLETED">
+            <intent-filter android:priority="1000">
+                <!-- CipherLab/RS36 scanner intents -->
+                <action android:name="com.cipherlab.scanner.ACTION" />
+                <action android:name="com.cipherlab.decode.ACTION" />
+                <action android:name="com.cipherlab.barcode.ACTION" />
+                <action android:name="com.cipherlab.scanner.RESULT" />
+                <action android:name="com.cipherlab.decode.RESULT" />
+                <action android:name="com.cipherlab.barcode.RESULT" />
+                <action android:name="com.cipherlab.scanner.DATA" />
+                <action android:name="com.cipherlab.decode.DATA" />
+                <action android:name="com.cipherlab.barcode.DATA" />
+                <!-- CipherLab barcodebaseapi (Reader_Service uses this) -->
+                <action android:name="com.cipherlab.barcodebaseapi.GET_DATA" />
+                <action android:name="com.cipherlab.barcodebaseapi.DATA" />
+                <action android:name="com.cipherlab.barcodebaseapi.RESULT" />
+                <!-- Reader_Service (sw.reader.*) intents - comprehensive list -->
+                <action android:name="sw.reader.scan.result" />
+                <action android:name="sw.reader.scan.data" />
+                <action android:name="sw.reader.decode.result" />
+                <action android:name="sw.reader.decode.data" />
+                <action android:name="sw.reader.barcode.result" />
+                <action android:name="sw.reader.barcode.data" />
+                <action android:name="sw.reader.ACTION" />
+                <action android:name="sw.reader.RESULT" />
+                <action android:name="sw.reader.DATA" />
+                <action android:name="sw.reader.SCAN_ACTION" />
+                <action android:name="sw.reader.SCAN_RESULT" />
+                <action android:name="sw.reader.SCAN_DATA" />
+                <action android:name="sw.reader.DECODE_ACTION" />
+                <action android:name="sw.reader.DECODE_RESULT" />
+                <action android:name="sw.reader.DECODE_DATA" />
+                <action android:name="sw.reader.BARCODE_ACTION" />
+                <action android:name="sw.reader.BARCODE_RESULT" />
+                <action android:name="sw.reader.BARCODE_DATA" />
+                <action android:name="sw.reader.scan" />
+                <action android:name="sw.reader.decode" />
+                <action android:name="sw.reader.barcode" />
+                <action android:name="sw.reader.result" />
+                <action android:name="sw.reader.data" />
+                <!-- Generic scanner intents -->
+                <action android:name="android.intent.action.VIEW" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </receiver>
+    </application>
+</manifest>
+

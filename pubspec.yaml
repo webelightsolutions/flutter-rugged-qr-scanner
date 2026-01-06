@@ -1,0 +1,27 @@
+name: rugged_qr_scanner
+description: Flutter package for hardware QR/barcode scanning on rugged Android devices. Supports CipherLab, Zebra, Honeywell, Datalogic, Unitech, and other industrial scanners.
+version: 1.0.0
+homepage: https://github.com/yourusername/rugged_qr_scanner
+repository: https://github.com/yourusername/rugged_qr_scanner
+issue_tracker: https://github.com/yourusername/rugged_qr_scanner/issues
+
+environment:
+  sdk: '>=3.0.0 <4.0.0'
+  flutter: ">=3.0.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^3.0.0
+
+flutter:
+  plugin:
+    platforms:
+      android:
+        package: com.rugged.qr_scanner
+        pluginClass: RuggedScannerPlugin
+
