@@ -4,7 +4,7 @@ version: 1.0.0
 homepage: https://github.com/webelightsolutions/flutter-rugged-qr-scanner
 repository: https://github.com/webelightsolutions/flutter-rugged-qr-scanner
 issue_tracker: https://github.com/webelightsolutions/flutter-rugged-qr-scanner/issues
-publish_to: https://pub.dev/publishers/webelight.co.in
+# publish_to: https://pub.dev/publishers/webelight.co.in
 topics:
   - rugged-device-scanner
   - cipherlab-android-device-scanner
