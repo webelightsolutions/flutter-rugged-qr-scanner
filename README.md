@@ -1,4 +1,4 @@
-# Rugged QR Scanner
+# Rugged Device QR Scanner
 
 A Flutter plugin for scanning QR codes and barcodes using the built-in hardware scanner on rugged Android devices. Provides seamless integration with industrial-grade barcode scanners from CipherLab
 
