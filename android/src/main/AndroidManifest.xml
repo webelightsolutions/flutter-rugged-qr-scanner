@@ -5,7 +5,7 @@
 
     <application>
         <!-- Broadcast receiver for scanner intents - registered in manifest to catch package-targeted broadcasts -->
-        <receiver android:name="com.rugged.qr_scanner.ScannerBroadcastReceiver" android:exported="true" android:enabled="true" android:permission="android.permission.RECEIVE_BOOT_COMPLETED">
+        <receiver android:name="com.rugged_device_qr_scanner.ScannerBroadcastReceiver" android:exported="true" android:enabled="true" android:permission="android.permission.RECEIVE_BOOT_COMPLETED">
             <intent-filter android:priority="1000">
                 <!-- CipherLab/RS36 scanner intents -->
                 <action android:name="com.cipherlab.scanner.ACTION" />

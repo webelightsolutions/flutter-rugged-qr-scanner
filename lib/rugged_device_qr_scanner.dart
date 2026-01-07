@@ -9,7 +9,7 @@
 /// 1. Add the package to your `pubspec.yaml`:
 /// ```yaml
 /// dependencies:
-///   rugged_qr_scanner: ^1.0.0
+///   rugged_device_qr_scanner: ^1.0.0
 /// ```
 ///
 /// 2. For CipherLab devices, add the SDK to your app:
@@ -23,7 +23,7 @@
 ///
 /// 3. Use the service:
 /// ```dart
-/// import 'package:rugged_qr_scanner/rugged_qr_scanner.dart';
+/// import 'package:rugged_device_qr_scanner/rugged_device_qr_scanner.dart';
 ///
 /// final scannerService = RuggedScannerService();
 /// scannerService.scanResults.listen((result) {
@@ -34,7 +34,7 @@
 ///
 /// See the [README](https://github.com/webelightsolutions/flutter-rugged-qr-scanner) for
 /// detailed documentation and examples.
-library rugged_qr_scan;
+library rugged_device_qr_scanner;
 
 export 'src/models/scan_result.dart';
 export 'src/services/rugged_scanner_service.dart';

@@ -1,4 +1,4 @@
-# Analysis options for rugged_qr_scanner package
+# Analysis options for rugged_device_qr_scan package
 # This file configures the Dart analyzer and linter
 
 include: package:flutter_lints/flutter.yaml
@@ -16,7 +16,7 @@ linter:
     - prefer_final_fields
     - prefer_final_locals
     - prefer_single_quotes
-    
+
     # Style rules
     - always_declare_return_types
     - always_put_required_named_parameters_first
@@ -41,7 +41,7 @@ linter:
     - prefer_spread_collections
     - sort_child_properties_last
     - use_key_in_widget_constructors
-    
+
     # Documentation rules
     - public_member_api_docs
     - require_trailing_commas
@@ -57,4 +57,3 @@ analyzer:
     strict-casts: true
     strict-inference: true
     strict-raw-types: true
-

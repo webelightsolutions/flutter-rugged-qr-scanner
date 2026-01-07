@@ -1,5 +1,5 @@
 name: example
-description: Example app for rugged_qr_scanner package
+description: Example app for rugged_device_qr_scanner package
 publish_to: "none"
 
 version: 1.0.0+1
@@ -10,7 +10,7 @@ environment:
 dependencies:
   flutter:
     sdk: flutter
-  rugged_qr_scan:
+  rugged_device_qr_scanner:
     path: ../
 
 dev_dependencies:

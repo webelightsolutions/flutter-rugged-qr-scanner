@@ -25,13 +25,13 @@ Add to your `pubspec.yaml`:
 
 ```yaml
 dependencies:
-  rugged_qr_scanner: ^1.0.0
+  rugged_device_qr_scanner: ^1.0.0
 ```
 
 ## Quick Start
 
 ```dart
-import 'package:rugged_qr_scanner/rugged_qr_scanner.dart';
+import 'package:rugged_device_qr_scanner/rugged_device_qr_scanner.dart';
 
 class ScannerScreen extends StatefulWidget {
   @override
@@ -131,8 +131,8 @@ Create `android/app/proguard-rules.pro`:
 }
 
 # Keep the plugin classes
--keep class com.rugged.qr_scanner.** { *; }
--keepclassmembers class com.rugged.qr_scanner.** { *; }
+-keep class com.rugged_device_qr_scanner.** { *; }
+-keepclassmembers class com.rugged_device_qr_scanner.** { *; }
 
 # Keep BroadcastReceiver classes
 -keep public class * extends android.content.BroadcastReceiver
@@ -195,7 +195,7 @@ android {
 
 ```dart
 import 'package:flutter/material.dart';
-import 'package:rugged_qr_scanner/rugged_qr_scanner.dart';
+import 'package:rugged_device_qr_scanner/rugged_device_qr_scanner.dart';
 import 'dart:async';
 
 void main() => runApp(MyApp());
@@ -313,7 +313,7 @@ class _ScannerScreenState extends State<ScannerScreen> {
               ),
             ),
           ),
-      
+  
           // Scan History
           Padding(
             padding: EdgeInsets.symmetric(horizontal: 16),
@@ -333,7 +333,7 @@ class _ScannerScreenState extends State<ScannerScreen> {
               ],
             ),
           ),
-      
+  
           Expanded(
             child: _scanHistory.isEmpty
                 ? Center(
@@ -489,18 +489,14 @@ Check if your device model is supported. The plugin detects:
 
 ## Additional Information
 
-- **Package**: [rugged_qr_scanner](https://pub.dev/packages/rugged_qr_scanner)
-- **Repository**: [GitHub](https://github.com/yourusername/rugged_qr_scanner)
-- **Issue Tracker**: [GitHub Issues](https://github.com/yourusername/rugged_qr_scanner/issues)
+- **Package**: [rugged_device_qr_scanner](https://pub.dev/packages/rugged_device_qr_scanner)
+- **Repository**: [GitHub](https://github.com/webelightsolutions/flutter-rugged-qr-scanner)
+- **Issue Tracker**: [GitHub Issues](https://github.com/webelightsolutions/flutter-rugged-qr-scanner/issues)
 - **License**: MIT
-
-## Contributing
-
-Contributions welcome! Please see [CONTRIBUTING.md](https://github.com/yourusername/rugged_qr_scanner/blob/main/CONTRIBUTING.md) for guidelines.
 
 ## License
 
-MIT License - see [LICENSE](https://github.com/yourusername/rugged_qr_scanner/blob/main/LICENSE) file.
+MIT License - see [LICENSE](https://github.com/webelightsolutions/flutter-rugged-qr-scanner/blob/main/LICENSE) file.
 
 ---
 

@@ -1,9 +1,16 @@
-name: rugged_qr_scan
+name: rugged_device_qr_scanner
 description: Flutter package for hardware QR/barcode scanning on rugged Android devices. Supports CipherLab industrial scanners.
-version: 0.0.1
+version: 1.0.0
 homepage: https://github.com/webelightsolutions/flutter-rugged-qr-scanner
 repository: https://github.com/webelightsolutions/flutter-rugged-qr-scanner
 issue_tracker: https://github.com/webelightsolutions/flutter-rugged-qr-scanner/issues
+publish_to: https://pub.dev/publishers/webelight.co.in
+topics:
+  - rugged-device-scanner
+  - cipherlab-android-device-scanner
+  - barcode-scanner
+  - hardware-scanner
+  - industrial-scanner
 
 environment:
   sdk: ">=3.0.0 <4.0.0"
@@ -22,5 +29,5 @@ flutter:
   plugin:
     platforms:
       android:
-        package: com.rugged.qr_scanner
+        package: com.rugged_device_qr_scanner
         pluginClass: RuggedScannerPlugin

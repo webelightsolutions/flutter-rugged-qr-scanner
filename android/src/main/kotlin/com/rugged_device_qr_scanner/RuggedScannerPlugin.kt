@@ -11,7 +11,7 @@
  * @author Rugged QR Scanner Team
  * @since 1.0.0
  */
-package com.rugged.qr_scanner
+package com.rugged_device_qr_scanner
 
 import android.content.BroadcastReceiver
 import android.content.Context
@@ -39,7 +39,7 @@ import io.flutter.plugin.common.MethodChannel.MethodCallHandler
  */
 class RuggedScannerPlugin : FlutterPlugin, MethodCallHandler {
     /** Method channel name for Flutter communication */
-    private val CHANNEL = "com.rugged.qr_scanner"
+    private val CHANNEL = "com.rugged_device_qr_scanner"
     
     /** Method channel for communicating with Flutter */
     private var methodChannel: MethodChannel? = null

@@ -1,7 +1,7 @@
 import 'dart:async';
 
 import 'package:flutter/material.dart';
-import 'package:rugged_qr_scan/rugged_qr_scan.dart';
+import 'package:rugged_device_qr_scanner/rugged_device_qr_scanner.dart';
 
 void main() {
   runApp(const MyApp());

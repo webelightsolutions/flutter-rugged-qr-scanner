@@ -4,7 +4,7 @@ plugins {
 }
 
 android {
-    namespace = "com.rugged.qr_scan"
+    namespace = "com.rugged_device_qr_scanner"
     compileSdk = 34
 
     compileOptions {
